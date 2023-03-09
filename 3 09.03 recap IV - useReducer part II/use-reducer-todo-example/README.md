@@ -10,9 +10,7 @@ Notice our `src` folder is subdivided in different folders:
 
 - `context`
 
-    Here we will be storing our different contexts. In this specific case you can find the `TodoContext` here. We also placed our `TodoReducer.js` here as well. This contains our: reducer function, actions and action types. 
-
-
+    Here we will be storing our different contexts. In this specific case you can find the `TodoContext` here. We also placed our `TodoReducer.js` here. 
 
 
 ## Usage of context in this example
@@ -36,7 +34,7 @@ export default function TodoProvider({children}) {
 }
 ```
 
-In the above code sample you can see the usage of `useReducer`. The `useReducer` returns the array [state, dispatch]. The `useReducer()` takes as first argument `todoReducer` function from `todoReducer.js` and as a second argument the `initialState` which can also be found in `todoReducer.js`
+In the above code sample you can see the usage of `useReducer`. The `useReducer` returns the array [state, dispatch]. The `useReducer()` takes as a first argument `todoReducer` function from `todoReducer.js` and as a second argument the `initialState` which can also be found in `todoReducer.js`
 
 
 ## Creating our reducer: `TodoReducer.js`
